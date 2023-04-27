@@ -1,10 +1,12 @@
 #wrap {
    width: 100%;
+   
    #header {
       width: 100%;
-      height: 40px;
-      border-bottom: 1px solid #000;   /* 색상 정해지면 지울거 */
-      position: fixed;
+      /* height: 40px; */
+      
+      /* border-bottom: 1px solid #999; */   /* 색상 정해지면 지울거 */
+      /* position: fixed; */
       .row1 {
          width: 100%;
          height: 100%;
@@ -16,7 +18,6 @@
             display: flex;
             justify-content: space-between; 
             max-width: 330px;            
-
             .left {
                height: 100%;
                a {
@@ -27,18 +28,19 @@
                   align-items: center;
                   justify-content: center;
                   img {
-                     margin:0 10px 0 0;
+                     margin: 0 10px -70px 0;
                   }
                }
                .menu {
-                  display: none;
+                  width: 100%;
+                  z-index: 1;                  
                   position: absolute;
-                  top: 40px;
+                  top: 52px;
                   left: 0;
-                  background: #fff;
+                  background: rgb(251, 247, 250);
                   width:210px;
                   overflow: hidden;
-                  border-right: 1px solid #ccc;
+                  border-right: 1px solid lavenderblush;
                   ul {
                      li {
                         text-align: left;

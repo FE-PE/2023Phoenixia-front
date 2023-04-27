@@ -1,16 +1,30 @@
 (function($,window){
 
+
+
    const obj = {
       init : function(){
          this.main();
       },
 
       main : function(){
-         const $category = $('#header .category');
+       /*   const $category = $('#header .category'); */
          const $menu     = $('#header .menu');
 
+         const category = document.querySelector(".category");
 
-         $category.on({
+         const closeBtn = document.querySelector(".close-btn");
+
+         category.addEventListener("click", ()=>{
+            $menu.show();
+         })
+
+         closeBtn.addEventListener("click",()=>{
+            $menu.hide();
+         })
+
+
+        /*  $category.on({
             mouseenter : function(){
                $menu.show();
             }
@@ -22,6 +36,7 @@
                $menu.hide();
             }
          });
+       */
 
 
          
@@ -40,4 +55,4 @@
 
    obj.init();
 
-})(jQuery,window);
+})(jQuery, window);

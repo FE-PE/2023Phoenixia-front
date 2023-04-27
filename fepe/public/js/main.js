@@ -32,7 +32,7 @@
        num++;  
        frame.style.transform = `rotate(${deg* num}deg)`;    
    
-       (active == 0 ) ? active = len : active--;
+       (active === 0 ) ? active = len : active--;
        activation(active, lists);    
    });
    
@@ -41,7 +41,7 @@
        num--;   
        frame.style.transform = `rotate(${deg* num}deg)`;   
    
-       (active == len ) ? active = 0 : active++; 
+       (active === len ) ? active = 0 : active++; 
        activation(active, lists);
    });
 
