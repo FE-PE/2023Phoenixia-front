@@ -1,48 +1,30 @@
 (($,window)=>{
 
-   const frame = document.querySelector("section");
-   const lists = frame.querySelectorAll("article");
-   const prev = document.querySelector(".btnPrev");
-   const next = document.querySelector(".btnNext");
-   const deg = 40;     /* 모바일 환경에서 가독성 떨어지면 각도조절,, */
-   const len = lists.length-1; 
-   let i = 0; 
-   let num = 0; 
-   let active = 0; 
-   
-   function activation(index, lists){
-       for( let el of lists){
-           el.classList.remove("on");
-       }
-       lists[index].classList.add("on");
-   }
-   
-   for(let el of lists) {  
-       let pic = el.querySelector(".pic");  
-   
-       el.style.transform = `rotate(${deg* i}deg) translateY(-100vh)`;
-       pic.style.backgroundImage = `url(img/member${i+1}.jpg)`;
-       i++; 
-   }
-   
-   
-   
-   //prev 버튼 
-   prev.addEventListener("click", ()=>{
-       num++;  
-       frame.style.transform = `rotate(${deg* num}deg)`;    
-   
-       (active === 0 ) ? active = len : active--;
-       activation(active, lists);    
-   });
-   
-   //next 버튼
-   next.addEventListener("click", ()=>{
-       num--;   
-       frame.style.transform = `rotate(${deg* num}deg)`;   
-   
-       (active === len ) ? active = 0 : active++; 
-       activation(active, lists);
-   });
+/*     // 모바일 터치 이벤트 (스와이프)
+    slide.addEventListener("touchstart", (e) => {
+    console.log("touchstart", e.touches[0].pageX);
+    startPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
+  })
+  slide.addEventListener("touchend", (e) => {
+    console.log("touchend", e.changedTouches[0].pageX);
+    endPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
+    if (startPoint < endPoint) {
+      // 오른쪽으로 스와이프 된 경우
+      console.log("prev move");
+      prevMove();
+    } else if (startPoint > endPoint) {
+      // 왼쪽으로 스와이프 된 경우
+      console.log("next move");
+      nextMove();
+    }
+  }
+
+ */
+
 
 })(jQuery,window);
+
+
+
+
+

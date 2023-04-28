@@ -33,7 +33,8 @@
                }
                .menu {
                   width: 100%;
-                  z-index: 1;                  
+                  z-index: 1;         
+                  display: none;         
                   position: absolute;
                   top: 52px;
                   left: 0;

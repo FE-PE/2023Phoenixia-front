@@ -1,0 +1,83 @@
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #footer {
+  width: 100%;
+  height: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  border-top: 1px solid #c5c2c2;
+  background: #999;
+}
+#wrap #footer .container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #footer .container .copyright {
+  height: 100%;
+  width: 100%;
+}
+#wrap #footer .container .copyright p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c1b1a;
+  margin: 20px 0 20px 0;
+}
+#wrap #footer .container .develop-by {
+  margin: 10px 0px 0px 5px;
+  color: #fff;
+}
+#wrap #footer .container .develop-by a {
+  margin: 0 5px 0 0;
+  color: grey;
+}
+#wrap #footer .container .github-organizations {
+  color: #fff;
+  margin: 3px 0px 0px 5px;
+}
+#wrap #footer .container .github-organizations a {
+  color: grey;
+  margin-left: 5px;
+}
+#wrap #footer .container .logo {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+#wrap #footer .container .logo img {
+  margin: 15px 0 0 0;
+  width: 110px;
+}
+
+/*      .copyright {
+   font-size: 18px;
+   font-weight: 600;
+   color: #1c1b1a;
+   margin: 20px 0 0 36px;
+   .develop-by {
+      margin: 10px 0px 0px 35px;
+      color: #fff;
+       a {
+         color: grey;
+         margin-left: 5px;
+       }
+   }
+   .github-organizations {
+      color: grey;
+      margin: 3px 0px 0px 35px;
+      .github {
+         color: grey;
+         margin-left: 5px;
+      }
+   }
+
+   .logo {
+      width: 100%;
+      height: 100%;
+      img {
+         width: 100px;
+      }
+   }
+}*/
